@@ -1,0 +1,13 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  display: block;
+
+  text-align: center;
+
+  width: ratio(35);
+}
+
+app-article {
+  height: ratio(15);
+}

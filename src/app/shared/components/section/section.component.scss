@@ -1,0 +1,13 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  color: var(--aside-color);
+
+  --padding: #{ratio(0.3)};
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+
+  list-style: none;
+}

@@ -1,0 +1,13 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  --margin: #{ratio(.3)};
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+}
+
+.title {
+  color: var(--btn-effect);
+  font-weight: 900;
+  text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+app-section {
+  @include media-max(laptop) {
+    flex-wrap: wrap;
+    align-content: bottom;
+  }
+}

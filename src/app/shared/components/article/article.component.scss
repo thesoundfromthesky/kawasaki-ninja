@@ -1,0 +1,6 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  display: flex;
+  flex-direction: column;
+}

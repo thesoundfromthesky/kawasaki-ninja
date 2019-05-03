@@ -1,0 +1,15 @@
+
+
+:root {
+  // media query breakpoints
+  --breakpoint-mobile-S: #{$breakpoint-mobile-S};
+  --breakpoint-mobile-M: #{$breakpoint-mobile-M};
+  --breakpoint-mobile-L: #{$breakpoint-mobile-L};
+
+  --breakpoint-tablet: #{$breakpoint-tablet};
+
+  --breakpoint-laptop: #{$breakpoint-laptop};
+  --breakpoint-laptop-L: #{$breakpoint-laptop-L};
+
+  --breakpoint-desktop-4k: #{$breakpoint-desktop-4k};
+}

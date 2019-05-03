@@ -1,3 +1,11 @@
+# Credit
+
+Design is found from <br>
+https://www.xdguru.com/kawasaki-ninja-homepage-xd/
+
+Animation code is from <br>
+https://www.youtube.com/watch?v=7JA90VI9fAI&t=307s
+
 # KawasakiNinjaV1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.

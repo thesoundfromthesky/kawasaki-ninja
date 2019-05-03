@@ -1,0 +1,19 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+dd {
+  padding-left: ratio(1);
+
+  --margin: #{ratio(1)};
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+
+  &:before {
+    content: "-";
+  }
+}
+
+app-article {
+  @include media(laptop) {
+    max-width: ratio(20);
+  }
+}

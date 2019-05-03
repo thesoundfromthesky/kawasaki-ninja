@@ -1,0 +1,20 @@
+app-left-aside {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+}
+
+app-right-aside {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(50%, -50%) rotate(-90deg);
+}
+
+app-bottom-aside {
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+}

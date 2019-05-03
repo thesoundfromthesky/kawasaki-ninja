@@ -1,0 +1,11 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+app-menu {
+  @include media-max(laptop) {
+    display: none;
+  }
+}
+
+app-icon:focus-within + app-menu {
+  display: block;
+}

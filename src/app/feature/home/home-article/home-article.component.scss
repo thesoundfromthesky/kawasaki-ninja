@@ -1,0 +1,6 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  max-height: ratio(12);
+  max-width: ratio(18);
+}

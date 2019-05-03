@@ -1,0 +1,37 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  position: relative;
+  --bg-img: url("/assets/img/page1.png") no-repeat center 10% / contain;
+  background: var(--bg-img), linear-gradient(to bottom right, #303537, #000000);
+
+  @include media(laptop) {
+    --bg-img: url("/assets/img/page1.png") no-repeat 0 center / 65%;
+  }
+}
+
+home-article {
+  position: absolute;
+  width: 90%;
+  @include media-max(laptop) {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+  @include media(laptop) {
+    top: 50%;
+    right: 25%;
+    transform: translate(50%, -50%);
+  }
+}
+
+home-section {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  transform: translateY(-50%);
+  @include media-max(laptop) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

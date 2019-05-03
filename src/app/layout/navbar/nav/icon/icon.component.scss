@@ -1,0 +1,20 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  display: flex;
+  justify-content: flex-end;
+}
+
+i {
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    color: var(--btn-effect);
+    pointer-events: none;
+  }
+
+  @include media(laptop) {
+    display: none;
+  }
+}

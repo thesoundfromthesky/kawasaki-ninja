@@ -1,0 +1,12 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  --margin: #{ratio(0.3)};
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-weight: 900;
+}

@@ -1,0 +1,24 @@
+@function varvw($var) {
+  @return #{"calc(var(" + $var + ") * 1vw)"};
+}
+
+@function varrem($var) {
+  @return #{"calc(var(" + $var + ") * 1rem)"};
+}
+
+@function varem($var) {
+  @return #{"calc(var(" + $var + ") * 1em)"};
+}
+
+@function varpx($var) {
+  @return #{"calc(var(" + $var + ") * 1px)"};
+}
+
+@function sum($a, $b) {
+  @return #{"calc(var(" + $a + ")  + var(" + $b + "))"};
+}
+
+@function ratio($a) {
+  $sum: sum(--font-size, --vw);
+  @return #{"calc(" + $sum + " * " + $a + ")"};
+}

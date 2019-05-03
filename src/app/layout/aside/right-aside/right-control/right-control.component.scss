@@ -1,0 +1,8 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host ::ng-deep {
+  display: block;
+  @include font-half();
+  color: var(--aside-color);
+  text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host ::ng-deep > a {
+  --radius: #{ratio(0.3)};
+  width: var(--radius);
+  height: var(--radius);
+  border: ratio(0.02) solid var(--btn-effect);
+  border-radius: 50%;
+
+  --margin: #{ratio(0.43)};
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: auto;
+  &.active {
+    background: var(--aside-color);
+  }
+}

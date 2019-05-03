@@ -1,0 +1,30 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  display: block;
+  position: relative;
+  user-select: none;
+}
+
+.nav-list {
+  text-transform: uppercase;
+  @include media-max(laptop) {
+    position: absolute;
+    right: 0;
+  }
+
+  @include media(laptop) {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+  }
+}
+
+.nav-item {
+  white-space: nowrap;
+
+  cursor: pointer;
+  &:hover {
+    color: var(--btn-effect);
+  }
+}

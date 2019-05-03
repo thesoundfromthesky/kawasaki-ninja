@@ -1,0 +1,38 @@
+@import "src/app/stylesheet/1-helper/1-helper";
+
+:host {
+  position: relative;
+  --bg-img: contain;
+  background: #000000 url("/assets/img/page3.png") no-repeat center bottom /
+    var(--bg-img);
+
+  @include media(laptop) {
+    --bg-img: 60%;
+  }
+}
+
+page2-article {
+  position: absolute;
+  @include media-max(laptop) {
+    width: 90%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+  }
+  @include media(laptop) {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+page2-section {
+    position: absolute;
+    bottom: 2%;
+    width: 90%;
+    transform: translateY(-50%);
+    @include media-max(laptop) {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
